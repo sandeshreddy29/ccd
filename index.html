@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cgkgpr</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        .gallery .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:4.5rem;
+}
+
+.gallery .box-container .box{
+    position: relative;
+    border:0.5rem solid rgb(224, 5, 206);
+    border-radius: .5rem;
+    height: 30rem;
+    
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .box-container .box:hover img{
+    transform: scale(1.1);
+    filter: grayscale();
+}
+
+.gallery .box-container .box .title{
+    position: absolute;
+    top:-10rem; left:0; right: 0;
+    background:#333;
+    color:#fff;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.gallery .box-container .box:hover .title{
+    top:0;
+}
+
+.gallery .box-container .box .icons{
+    position: absolute;
+    bottom:-10rem; left:0; right: 0;
+    background:#333;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.gallery .box-container .box:hover .icons{
+    bottom: 0;
+}
+
+.gallery .box-container .box .icons a{
+    font-size: 2rem;
+    margin:.5rem 1rem;
+    color:#fff;
+}
+
+.gallery .box-container .box .icons a:hover{
+    color:var(--main-color);
+}
+    #menu-bars{
+        font-size: 3rem;
+        color:#fff;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .home .content{
+        text-align: center;
+        padding-top: 6rem;
+        margin:2rem auto;
+        max-width: 70rem;
+    }
+    
+    .home .content h3{
+        color:#fff;
+        font-size: 4.5rem;
+        text-transform: uppercase;
+    }
+    
+    .home .content h3 span{
+        color:var(--main-color);
+        text-transform: uppercase;
+    }
+    
+    .home .home-slider .swiper-slide{
+        overflow: hidden;
+        border-radius: .5rem;
+        height: 50rem;
+        width:35rem;
+    }
+    
+    .home .home-slider .swiper-slide img{
+        height:100%;
+        width:100%;
+        object-fit: cover;
+    }
+</style>
+    
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header>
+
+    
+    <div id="menu" class="fas fa-bars"></div>
+    <div class="logo" id="logo"> 
+      <img src="pictures/school logo.jpeg">
+    </div>
+        
+   
+  
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="https://www.google.com/search?biw=360&bih=705&hl=en-GB&cs=1&cds=3&sxsrf=AOaemvIntgl3ErgQ9Gx6uHTRblCuPsyQNQ:1637660203944&q=Coast+Guard+Kindergarten+School&ludocid=8066621438873335061&gsas=1&client=ms-android-samsung-gj-rev1&v=12.27.9.23.arm64&lsig=AB86z5XLxlxaZQny7DCZDcT6s8E3&kgs=b2b4161b1e1a82f6&shndl=-1&source=sh/x/kp/local/4&entrypoint=sh/x/kp/local">location</a></li>
+            <li><a href="#EVENTS">Events</a></li>
+            <li><a href="#GALLERY" >GALLERY</a></li>
+            <li><a href="pictures/Admission.pdf" >Admission</a></li>
+
+
+        </ul>
+    </nav>
+
+    <div id="login" class="fas fa-user-circle"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- gallery -->
+
+<div class="login-form">
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" placeholder="username" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+        <input type="submit" class="btn" value="login">
+        <i class="fas fa-times"></i>
+    </form>
+
+</div>
+
+
+<!-- home section starts  -->
+<div class="try" id="try">
+<section class="home" id="home">
+    
+    <h1>COAST GAURD Kindergarten</h1>
+  
+    <p></p>
+    <a href="#"><button class="btn">get started</button></a>
+
+   
+
+</section>
+
+</div>
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="pictures/school.jpeg" alt="">
+    </div>
+
+    <div class="content">
+        <h3>  WE WELCOME YOU</h3>
+        <p>A warm amiable and secure environment greets each one as they enter Coastguard kindergarten. Modern pedagogical practice state of the art infrastructure and an environment where the child will receive the best possible care , coupled with an atmosphere that fosters children's love of learning and encourages creative and fun. We also have a clean and child - centric facility, age specific classrooms and personal play area. You can see classrooms filled with happy, healthy children and enjoy loads of children art work throughout the facility. 
+            Our school keeps itself abreast with paradigm shift in the realm of education with their feet firmly rooted in values, ethics and traditional. The pupils stretch out their wings to soar the realm of the fast changing world, with their heads and hearts in the right place. The objective of Coastguard kindergarten is to Nurture individuals who are able to do extraordinary things in the most ordinary situations.</p>
+        
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- course section starts  -->
+
+<section class="course" id="course">
+
+<h1 class="heading">KNOW BETTER ABOUT US </h1>    
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="./pictures/dig.jpeg" alt="">
+       
+        <div class="content">
+        
+            <a href="#" class="title">Digital Classrooms</a>
+            <p>Well-equipped, IT-enabled classrooms with multimedia projectors to make the learning more interactive. Spacious and airy classrooms with custom designed furniture to suit student requirements.</p>
+           
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="./pictures/act.jpeg" alt="">
+       
+        <div class="content">
+        
+            <a href="#" class="title">Library & Activity Room</a>
+            <p>Well stocked library with carefully selected fictional and reference books across all ages. Students enjoy learning music, dance, dramatics and innovative art & craft activities!</p>
+           
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="./pictures/lib.jpeg" alt="">
+       
+        <div class="content">
+        
+            <a href="#" class="title">History </a>
+            <p>Coastguard kindergarten was established in the year 1996 . It is located at Panipat Road, Hadoo  , Portblair. The school started as a play school with a mere strength of 7 students. The school stands for academic excellence, development of skills and character formation with the view to groom the children and prepare them for primary school education</p>
+           
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="./pictures/ace.jpeg" alt="">
+       
+        <div class="content">
+        
+            <a href="#" class="title">Academic Excellence </a>
+            <p>All our staff members are highly qualified, experienced and specially trained to enhance the children in every possible aspect. We have a group of well trained and qualified teachers who leave no stone unturned in the fulfillment of their duties. Their knowledge and teaching skills are upgraded periodically by conducting various seminars and workshops.</p>
+           
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="pictures/CURRICULUM.jpeg" alt="">
+       
+        <div class="content">
+        
+            <a href="#" class="title">Curriculum</a>
+            <p>We prepare children to excel in kindergarten with a solid education foundation. Children from our school are thriving in primary school and beyond. We create opportunities for children to use their natural curiosity to lead them through imagination, questioning, learning and growing. At CGKG there is a perfect balance between play and learning.</p>
+           
+        </div>
+    </div>
+    <div class="box">
+        <img src="./pictures/labs.jpeg" alt="">
+       
+        <div class="content">
+        
+            <a href="#" class="title">Science Labs & Tech Center</a>
+            <p>Well equipped labs that aid hands-on learning to support the classroom learning. Integrates new technology into the learning experience. Modern technology center with latest computers to aid practical learning.</p>
+           
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- course section ends -->
+
+<!-- teacher section starts  -->
+
+<section class="EVENTS" id="EVENTS">
+
+<h1 class="heading">EVENTS</h1>
+
+<p></p>
+
+<section class="gallery" id="gallery">
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="./pictures/ev1.jpeg" alt="">
+            <h3 class="title">FLOWER SHOW</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./pictures/ev2.jpeg" alt="">>
+            <h3 class="title">SCHOOL PICNIC</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./pictures/ev3.jpeg" alt="">
+            <h3 class="title">CLEANLINESS DRIVE</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./pictures/ev4.jpeg" alt="">
+            <h3 class="title">COLOR DAY</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        
+
+
+    </div>
+
+</section>
+
+
+</section>
+
+<!-- teacher section ends -->
+
+<!-- contact section starts  -->
+
+<section class="GALLERY" id="GALLERY">
+
+<h1 class="heading">GALLERY</h1>
+<section class="home" id="home">
+
+   
+
+    <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> <img src="./pictures/g1.jpeg" alt=""></div>
+            <div class="swiper-slide"> <img src="./pictures/g2.jpeg" alt=""></div>
+            <div class="swiper-slide"> <img src="./pictures/g14.jpeg" alt=""></div>
+            <div class="swiper-slide"> <img src="./pictures/g4.jpeg" alt=""></div>
+            <div class="swiper-slide"> <img src="./pictures/g11.jpeg" alt=""></div>
+            <div class="swiper-slide"> <img src="./pictures/g10.jpeg" alt=""></div>
+            <div class="swiper-slide"> <img src="./pictures/g7.jpeg" alt=""></div>
+            <div class="swiper-slide"> <img src="./pictures/g6.jpeg" alt=""></div>
+            <div class="swiper-slide"> <img src="./pictures/g5.jpeg" alt=""></div>
+            <div class="swiper-slide"> <img src="./pictures/g8.jpeg" alt=""></div>
+            <div class="swiper-slide"> <img src="./pictures/g3.jpeg" alt=""></div>
+            <div class="swiper-slide"> <img src="./pictures/g9.jpeg" alt=""></div>
+            <div class="swiper-slide"> <img src="./pictures/g10.jpeg" alt=""></div>
+            <div class="swiper-slide"> <img src="./pictures/g13.jpeg" alt=""></div>
+            <div class="swiper-slide"> <img src="./pictures/g12.jpeg" alt=""></div>
+            
+            
+          
+        </div>
+    </div>
+
+</section>
+
+
+
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+       
+
+        <div class="box">
+            <h3>quick links</h3>
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="https://www.google.com/search?biw=360&bih=705&hl=en-GB&cs=1&cds=3&sxsrf=AOaemvIntgl3ErgQ9Gx6uHTRblCuPsyQNQ:1637660203944&q=Coast+Guard+Kindergarten+School&ludocid=8066621438873335061&gsas=1&client=ms-android-samsung-gj-rev1&v=12.27.9.23.arm64&lsig=AB86z5XLxlxaZQny7DCZDcT6s8E3&kgs=b2b4161b1e1a82f6&shndl=-1&source=sh/x/kp/local/4&entrypoint=sh/x/kp/local">location</a></li>
+            <li><a href="#EVENTS">Events</a></li>
+            <li><a href="#GALLERY" >GALLERY</a></li>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-map-marker-alt"></i> port blair, haddo </p>
+            <p> <i class="fas fa-envelope"></i> cgkgpb@gmail.com </p>
+            <p> <i class="fas fa-phone"></i> +007 9089 6767 </p>
+        </div>
+
+    </div>
+
+    
+
+</div>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- custom js file link  -->
+<script src="script.js"></script>
+<script>
+ 
+
+var swiper = new Swiper(".home-slider", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2,
+    slideShadows: true,
+  },
+  loop:true,
+  autoplay:{
+    delay: 3000,
+    disableOnInteraction:false,
+  }
+});
+
+
+</script>
+
+</body>
+</html>
