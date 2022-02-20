@@ -253,7 +253,7 @@ html body{
     min-height: 100%;
 }
 .try{
-    background: url(pictures/www.jpeg) no-repeat ;
+    background: url(pictures/g) no-repeat ;
     width:"5000";
     height:50%;
     object-fit: fill;
