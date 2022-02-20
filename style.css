@@ -254,8 +254,8 @@ html body{
 }
 .try{
     background: url(pictures/www.jpeg) no-repeat ;
-    width:"2000";
-    height:100%;
+    width:"5000";
+    height:50%;
     object-fit: fill;
 }
 
